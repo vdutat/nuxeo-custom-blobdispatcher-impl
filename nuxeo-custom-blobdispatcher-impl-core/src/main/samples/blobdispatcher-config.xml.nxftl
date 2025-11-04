@@ -1,0 +1,22 @@
+<#escape x as x?xml>
+<?xml version="1.0"?>
+<component name="blobdispatcher-config">
+
+  <extension target="org.nuxeo.ecm.core.blob.BlobManager" point="configuration">
+    <blobprovider name="obsolete">
+      <class>${nuxeo.core.binarymanager}</class>
+      <property name="path">${repository.binary.store}_obsolete</property>
+      <property name="key">${nuxeo.core.binarymanager_key}</property>
+    </blobprovider>
+  </extension>
+
+  <extension target="org.nuxeo.ecm.core.blob.DocumentBlobManager" point="configuration">
+    <blobdispatcher>
+      <class>com.acme.ecm.core.blob.CustomBlobDispatcher</class>
+      <property name="ecm:currentLifeCycleState=obsolete">obsolete</property>
+      <property name="default">default</property>
+    </blobdispatcher>
+  </extension>
+
+</component>
+</#escape>
