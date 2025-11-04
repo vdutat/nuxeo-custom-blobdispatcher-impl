@@ -48,18 +48,6 @@ mvn clean install
 nuxeoctl mp-install nuxeo-custom-blobdispatcher-impl/nuxeo-custom-blobdispatcher-impl-package/target/nuxeo-custom-blobdispatcher-impl-*.zip
 ```
 
-## Build and run with Docker and Docker Compose
-
-### Requirements
-
-* maven
-
-### Build
-
-```
-mvn clean install
-```
-
 ## Support
 
 **These features are not part of the Nuxeo Production platform, they are not supported**
