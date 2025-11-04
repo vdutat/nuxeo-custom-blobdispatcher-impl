@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<component name="com.acme.ecm.core.blob.customblobdispatcher">
+
+  <extension target="org.nuxeo.ecm.core.blob.DocumentBlobManager" point="configuration">
+    <!-- 
+    You might find some help here:
+    https://explorer.nuxeo.com/nuxeo/site/distribution/latest/viewExtensionPoint/org.nuxeo.ecm.core.blob.DocumentBlobManager%2d%2dconfiguration
+    -->
+  </extension>
+
+</component>

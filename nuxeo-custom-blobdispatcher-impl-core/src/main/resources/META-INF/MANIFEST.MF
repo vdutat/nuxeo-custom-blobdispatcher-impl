@@ -1,0 +1,9 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: com.acme.ecm.core.blob
+Bundle-Version: 1.0.0
+Bundle-Name: nuxeo-custom-blobdispatcher-impl-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.acme.ecm.core.blob.nuxeo-custom-blobdispatcher-impl-core;singleton=true
+Nuxeo-Component: OSGI-INF/customblobdispatcher-contrib.xml
